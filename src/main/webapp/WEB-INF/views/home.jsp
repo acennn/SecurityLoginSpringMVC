@@ -9,6 +9,8 @@
 	Public page!  
 </h1>
 
-<a href="admin/privatePage">Continue</a>
+<h3>User: admin </br>Password : admin</br> </h3>
+
+<a href="admin/privatePage">Continue to Login</a>
 </body>
 </html>
