@@ -5,13 +5,30 @@
     http://www.springframework.org/schema/security
     http://www.springframework.org/schema/security/spring-security-3.1.xsd">
 
+<!-- <http auto-config="true" use-expressions="true" >
+
+<intercept-url pattern="/admin/*" access="hasAnyRole('ROLE_ADMIN','ROLE_MODERATOR')" />
+
+</http> -->
+
+
 <http auto-config="true" use-expressions="true" >
 
 <intercept-url pattern="/admin/*" access="hasAnyRole('ROLE_ADMIN','ROLE_MODERATOR')" />
 
-
-
+<http-basic />
+ 
+ <logout invalidate-session="true"  />
+ 
+ 
 </http>
+
+
+
+
+
+
+
 
 <beans:import resource="servlet-context.xml"/>
 
